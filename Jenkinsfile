@@ -13,7 +13,7 @@ pipeline {
         }
 	     stage ('copy') {
             steps { 
-                sh 'mv /home/zippyops/jenkins/workspace/chef-project/java-sample-app/target/*.war chef-repo/cookbooks/tomcat/files' 
+                sh 'mv /home/zippyops/jenkins/workspace/chef-project/java-sample-app/target/*.war /root/chef-repo/cookbooks/tomcat/files' 
 	    }
         }
     }
