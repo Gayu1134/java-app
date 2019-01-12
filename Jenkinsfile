@@ -1,5 +1,5 @@
 pipeline {
-	agent {label 'cent'}
+	agent {label 'karthi'}
     stages {
         stage ('checkout') {
             steps {
@@ -14,7 +14,7 @@ pipeline {
 	     stage ('copy') {
             steps {
                 sh 'rm -rf /home/zippyops/chef-repo/cookbooks/tomcat/files/*' 
-                sh 'mv /home/zippyops/jenkins/workspace/project/java-sample-app/target/* /home/zippyops/chef-repo/cookbooks/tomcat/files' 
+                sh 'mv /home/zippyops/jenkins/workspace/chef-project/java-sample-app/target/* /home/zippyops/chef-repo/cookbooks/tomcat/files' 
 	    }
         }
     }
