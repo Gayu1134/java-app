@@ -11,7 +11,7 @@ pipeline {
                 sh 'mvn -f java-sample-app/pom.xml clean install' 
 	    }
         }
-	     stage ('copy') {
+	     stage ('move') {
             steps { 
                 sh 'mv /home/zippyops/jenkins/workspace/chef-project/java-sample-app/target/*.war /root/chef-repo/cookbooks/tomcat/files' 
 	    }
